@@ -23,14 +23,25 @@ public class PasswordGenerator {
 		
 		String yourColor = scanColor.next();
 		
-		Scanner scanDate = new Scanner (System.in);
+		Scanner scanDateDay = new Scanner (System.in);
 		
-		System.out.println("Inserisci la tua data di nascita");
+		System.out.println("Inserisci il giorno in cui sei nato");
 		
-		String yourDate = scanColor.next();
+		int yourDateDay = scanDateDay.nextInt();
+		
+		Scanner scanDateMonth = new Scanner (System.in);
+		
+		System.out.println("Inserisci il mese in cui sei nato");
+		
+		int yourDateMonth = scanDateMonth.nextInt();
+		
+		Scanner scanDateYear = new Scanner (System.in);
+		
+		System.out.println("Inserisci l'anno in cui sei nato");
+		
+		int yourDateYear = scanDateYear.nextInt();
 		
 		
-		
-		System.out.println("La tua password è: " + name + lastName + yourColor + yourDate);
+		System.out.println("La tua password è: " + name + "-" + lastName + "-" + yourColor + "-" + (yourDateDay + yourDateMonth + yourDateYear));
 	}
 }
