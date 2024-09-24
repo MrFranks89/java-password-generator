@@ -41,7 +41,8 @@ public class PasswordGenerator {
 		
 		int yourDateYear = scanDateYear.nextInt();
 		
+		int somma = yourDateDay + yourDateMonth + yourDateYear;
 		
-		System.out.println("La tua password è: " + name + "-" + lastName + "-" + yourColor + "-" + (yourDateDay + yourDateMonth + yourDateYear));
+		System.out.println("La tua password è: " + name + "-" + lastName + "-" + yourColor + "-" + somma);
 	}
 }
